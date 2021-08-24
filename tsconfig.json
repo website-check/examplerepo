@@ -1,0 +1,47 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"rootDir": ".",
+		"outDir": "./dist",
+		"moduleResolution": "node",
+		"module": "CommonJS",
+		"target": "es6",
+		"sourceMap": true,
+		"lib": ["es2015"],
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noEmit": false,
+		"strict": true,
+		"strictPropertyInitialization": false,
+		"esModuleInterop": true,
+		"strictNullChecks": true,
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"resolveJsonModule": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": false,
+		"removeComments": true,
+		"paths": {
+			"@frontend/*": ["frontends/*/src"],
+			"@apps/*": ["apps/*/src"],
+			"@lib/*": ["libs/*/src"]
+		},
+		"baseUrl": "."
+	},
+	"references": [
+		{ "path": "apps/typescript-starter-master" },
+		{ "path": "frontends/vue-frontend" },
+		{ "path": "libs/library" }
+	],
+	"exclude": ["node_modules", "dist", "**/node_modules", "_resolveme", "**/_resolveme"]
+}
