@@ -1,0 +1,25 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"composite": true,
+		"allowJs": false,
+		"declaration": true,
+		"declarationMap": true,
+		"allowSyntheticDefaultImports": true,
+		"types": [
+			"webpack-env",
+			"jest"
+		],
+		"lib": [
+			"esnext",
+			"dom",
+			"dom.iterable",
+			"scripthost"
+		]
+	},
+	"types": [
+		"node"
+	],
+}

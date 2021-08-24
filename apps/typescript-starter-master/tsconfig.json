@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "target": "es2016",
+    "types": ["node", "jest"],
+    "sourceMap": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "incremental": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@lib/dto-seal": ["../../libs/library/src/index.ts"]
+    }
+  },
+  "references": [
+    {
+      "path": "../../libs/library"
+    }
+  ],
+  "exclude": ["dist", "test"]
+}

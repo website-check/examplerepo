@@ -1,0 +1,9 @@
+{
+  "type": "application",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "entryFile": "apps/typescript-starter-master/src/main",
+  "compilerOptions": {
+    "webpack": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"extends": "../tsconfig.frontend.json",
+	"compilerOptions": {
+		"outDir": ".",
+		"rootDir": "../..",
+		"baseUrl": "./",
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"paths": {
+			"@lib/library": ["../../libs/library/src/index.ts"]
+		}
+	},
+	"references": [
+		{
+			"path": "../../libs/library"
+		}
+	],
+	"include": [".", "../../libs/library"],
+	"exclude": ["node_modules", "dist", "*.d.ts"]
+}

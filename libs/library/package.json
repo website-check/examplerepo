@@ -1,0 +1,18 @@
+{
+	"name": "@lib/library",
+	"version": "1.0.0",
+	"private": true,
+	"main": "./src/index.ts",
+	"types": "./src/index.ts",
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"scripts": {
+		"prebuild": "rimraf dist",
+		"build": "run-s clean build:tsc",
+		"build:tsc": "yarn prebuild && tsc -b",
+		"clean": "rimraf lib coverage tsconfig.tsbuildinfo"
+	},
+	"dependencies": {},
+	"devDependencies": {}
+}
