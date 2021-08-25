@@ -16,7 +16,7 @@
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
-      "@lib/dto-seal": ["../../libs/library/src/index.ts"]
+      "@lib/library": ["../../libs/library/dist/libs/library/src/*"]
     }
   },
   "references": [
@@ -24,5 +24,5 @@
       "path": "../../libs/library"
     }
   ],
-  "exclude": ["dist", "test"]
+  "exclude": ["./dist", "test"]
 }

@@ -43,5 +43,5 @@
 		{ "path": "frontends/vue-frontend" },
 		{ "path": "libs/library" }
 	],
-	"exclude": ["node_modules", "dist", "**/node_modules", "_resolveme", "**/_resolveme"]
+	"exclude": ["node_modules", "**/node_modules", "_resolveme", "**/_resolveme"]
 }
